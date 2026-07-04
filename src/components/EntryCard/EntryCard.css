@@ -1,0 +1,110 @@
+.card-photo-link { display: block; }
+.card-photo {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(145deg, #171916, #0d0f0e);
+  transform: scale(0.85);
+  opacity: 0;
+  transition: transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.55s ease;
+}
+.reveal-visible .card-photo {
+  transform: scale(1);
+  opacity: 1;
+}
+.card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.card-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(201, 169, 104, 0.06) 0px,
+      rgba(201, 169, 104, 0.06) 1px,
+      transparent 1px,
+      transparent 14px
+    );
+}
+.card-photo-placeholder span {
+  font-size: 26px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  border: 1px solid rgba(201, 169, 104, 0.35);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-photo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 10px 12px;
+  background: linear-gradient(
+    to top,
+    rgba(13, 15, 14, 0.75),
+    rgba(13, 15, 14, 0) 45%
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  font-size: 11px;
+  color: var(--accent);
+}
+.card:hover .card-photo-overlay { opacity: 1; }
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+.card-body .tag {
+  font-size: 10.5px;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+.card-body h3 {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2px 0 0;
+}
+.card-period {
+  font-size: 11px;
+  color: var(--text-dim);
+  opacity: 0.8;
+}
+.card-body p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  margin: 6px 0 0;
+  flex: 1;
+}
+.card-tech {
+  font-size: 10.5px;
+  color: var(--text-dim);
+  opacity: 0.75;
+  margin-top: 8px;
+}
+.card-link {
+  font-size: 12px;
+  color: var(--accent);
+  margin-top: 12px;
+}
+.card-link:hover { text-decoration: underline; }

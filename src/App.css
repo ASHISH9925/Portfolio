@@ -1,0 +1,11 @@
+.page {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 48px;
+}

@@ -1,0 +1,17 @@
+.spotlight {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  height: 169%;
+  width: 138%;
+  opacity: 0;
+  animation: spotlight-fade 2s ease forwards 0.15s;
+}
+@keyframes spotlight-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (min-width: 1024px) {
+  .spotlight { width: 84%; }
+}
