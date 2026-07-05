@@ -24,12 +24,12 @@ const CERTIFICATIONS = [
     photo: "/Images/Certifications/langsmith.jpg",
   },
   {
-    name: "White Paper Contest — Certificate of Participation",
-    tag: "Pune International Centre",
+    name: "Complete Ethical Hacking Bootcamp",
+    tag: "Udemy",
     description:
-      "Authored and presented on using AI as a protector against the cybersecurity threats it generates.",
-    link: "#",
-    photo: "/Images/Certifications/white_paper.jpeg",
+      "Comprehensive hands-on training covering penetration testing, network security, web vulnerability assessment, and exploitation using Kali Linux.",
+    link: "https://www.udemy.com/certificate/UC-86983250-65c9-490d-904d-76857e98bc0a/",
+    photo: "/Images/Certifications/ethical_hacking.png",
   },
   {
     name: "Meta React Basics Certificate",
@@ -38,6 +38,14 @@ const CERTIFICATIONS = [
       "Completed Meta's React Basics course, mastering reusable components, event handling, data management, routing, and building efficient, dynamic web applications.",
     link: "https://www.coursera.org/account/accomplishments/certificate/DI4PL5O2KR1G",
     photo: "/Images/Certifications/react_basics.jpeg",
+  },
+  {
+    name: "White Paper Contest — Certificate of Participation",
+    tag: "Pune International Centre",
+    description:
+      "Authored and presented on using AI as a protector against the cybersecurity threats it generates.",
+    link: "#",
+    photo: "/Images/Certifications/white_paper.jpeg",
   }
 ];
 
