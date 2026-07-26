@@ -8,20 +8,20 @@ const CERTIFICATIONS = [
     photo: "/Images/Certifications/meta_back_end.jpeg",
   },
   {
-    name: "API Development Certification",
-    tag: "Meta",
-    description:
-      "Hands-on experience building, testing, and deploying RESTful APIs.",
-    link: "https://www.coursera.org/account/accomplishments/verify/BNGSH8W41C4E",
-    photo: "/Images/Certifications/api_course.jpeg",
-  },
-  {
     name: "Quickstart: LangSmith Essentials",
     tag: "LangChain",
     description:
       "LLM tracing, evaluation pipelines, and prompt engineering for production-ready AI applications.",
     link: "https://academy.langchain.com/certificates/c4riphsjx3",
     photo: "/Images/Certifications/langsmith.jpg",
+  },
+  {
+    name: "Cyber Security 101",
+    tag: "TryHackMe",
+    description:
+      "Comprehensive hands-on pathway covering fundamental security concepts, web application penetration testing, network defense, Linux and Windows OS security, cryptography, and digital forensics through interactive labs.",
+    link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-QZNDIBLPIC.pdf",
+    photo: "/Images/Certifications/THM-QZNDIBLPIC.png",
   },
   {
     name: "Complete Ethical Hacking Bootcamp",

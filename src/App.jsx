@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 import CertificationsPage from "./pages/CertificationsPage/CertificationsPage";
 import AwardsPage from "./pages/AwardsPage/AwardsPage";
+import BadgesPage from "./pages/BadgesPage/BadgesPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import "./App.css";
@@ -25,6 +26,8 @@ export default function App() {
         return <CertificationsPage />;
       case "awards":
         return <AwardsPage />;
+      case "badges":
+        return <BadgesPage />;
       case "about":
         return <AboutPage />;
       case "contact":
@@ -39,7 +42,7 @@ export default function App() {
       <div className="wrap">
         <Navbar activePage={page} goTo={goTo} />
         {renderPage()}
-        <Footer />
+        {page !== "contact" && <Footer />}
       </div>
     </div>
   );

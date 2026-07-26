@@ -3,6 +3,7 @@ const NAV_ITEMS = [
   { key: "projects", label: "projects" },
   { key: "certifications", label: "certifications" },
   { key: "awards", label: "awards" },
+  { key: "badges", label: "badges" },
   { key: "about", label: "about" },
   { key: "contact", label: "contact" },
 ];
