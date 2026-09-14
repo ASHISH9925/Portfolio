@@ -47,8 +47,12 @@ button { font-family: inherit; cursor: pointer; }
   flex-shrink: 0;
 }
 
-/* buttons */
+/* buttons & button-links */
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   font-size: 13px;
   padding: 12px 20px;
   border: 1px solid var(--line);
@@ -56,6 +60,7 @@ button { font-family: inherit; cursor: pointer; }
   background: transparent;
   color: var(--text);
   transition: border-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
 }
 .btn:hover, .btn:focus-visible {
   border-color: var(--accent);

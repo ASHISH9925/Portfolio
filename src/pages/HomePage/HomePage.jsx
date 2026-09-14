@@ -30,12 +30,30 @@ export default function HomePage({ goTo }) {
           <h1 className="hero-name">{heroName}</h1>
           <p className="hero-tagline mono">{tagline}</p>
           <div className="cta-row">
-            <button className="btn btn-primary" onClick={() => goTo("projects")}>
+            <a
+              href="/projects"
+              className="btn btn-primary"
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  goTo("projects");
+                }
+              }}
+            >
               See my projects
-            </button>
-            <button className="btn" onClick={() => goTo("contact")}>
+            </a>
+            <a
+              href="/contact"
+              className="btn"
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  goTo("contact");
+                }
+              }}
+            >
               Get in touch
-            </button>
+            </a>
           </div>
         </div>
 
@@ -112,9 +130,18 @@ export default function HomePage({ goTo }) {
               an AI-powered investigation platform.
             </p>
           </div>
-          <button className="btn" onClick={() => goTo("projects")}>
+          <a
+            href="/projects"
+            className="btn"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                goTo("projects");
+              }
+            }}
+          >
             View all projects →
-          </button>
+          </a>
         </div>
       </Reveal>
     </>

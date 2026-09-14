@@ -32,6 +32,9 @@
   background: none;
   border: none;
   padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 .nav .brand strong {
   color: var(--text);
@@ -43,19 +46,27 @@
   font-size: 13px;
   flex-wrap: wrap;
 }
-.nav-links button {
+.nav-links button,
+.nav-links a {
   background: none;
   border: none;
   color: var(--text-dim);
   padding: 4px 0;
   border-bottom: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-family: inherit;
 }
 .nav-links button:hover,
-.nav-links button:focus-visible {
+.nav-links button:focus-visible,
+.nav-links a:hover,
+.nav-links a:focus-visible {
   color: var(--accent);
   outline: none;
 }
-.nav-links button.active {
+.nav-links button.active,
+.nav-links a.active {
   color: var(--text);
   border-bottom-color: var(--accent);
 }

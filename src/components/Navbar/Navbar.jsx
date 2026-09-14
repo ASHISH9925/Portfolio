@@ -5,6 +5,13 @@ import "./Navbar.css";
 export default function Navbar({ activePage, goTo }) {
   const [photoOpen, setPhotoOpen] = useState(false);
 
+  const handleNavClick = (e, target) => {
+    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+      e.preventDefault();
+      goTo(target);
+    }
+  };
+
   return (
     <>
       <nav className="nav">
@@ -15,19 +22,24 @@ export default function Navbar({ activePage, goTo }) {
             alt="Ashish Sharma"
             onClick={() => setPhotoOpen(true)}
           />
-          <button className="brand mono" onClick={() => goTo("home")}>
+          <a
+            href="/"
+            className="brand mono"
+            onClick={(e) => handleNavClick(e, "home")}
+          >
             ashish<strong>codes</strong>.com
-          </button>
+          </a>
         </div>
         <div className="nav-links mono">
           {NAV_ITEMS.map((item) => (
-            <button
+            <a
               key={item.key}
+              href={item.path || (item.key === "home" ? "/" : `/${item.key}`)}
               className={activePage === item.key ? "active" : ""}
-              onClick={() => goTo(item.key)}
+              onClick={(e) => handleNavClick(e, item.key)}
             >
               {item.label}
-            </button>
+            </a>
           ))}
         </div>
       </nav>
@@ -44,3 +56,4 @@ export default function Navbar({ activePage, goTo }) {
     </>
   );
 }
+
