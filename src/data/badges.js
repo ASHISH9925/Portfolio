@@ -25,14 +25,19 @@ export const LC_BADGES = [
     description: "Successfully solved daily coding challenges throughout December 2024.",
   },
   {
-    name: "LeetCode 50 Days Active",
+    name: "LeetCode 50 Days Active 2024",
     photo: "/Images/Badges/2024-50.gif",
     description: "Achieved by maintaining a consistent coding habit for 50 days.",
   },
   {
-    name: "LeetCode 100 Days Active",
+    name: "LeetCode 100 Days Active 2024",
     photo: "/Images/Badges/2024-100-new.gif",
     description: "Achieved by maintaining a consistent coding habit for 100 days.",
+  },
+  {
+    name: "LeetCode 50 Days Active 2026",
+    photo: "/Images/Badges/2026-50.gif",
+    description: "Achieved by maintaining a consistent coding habit for 50 days.",
   },
 ];
 
