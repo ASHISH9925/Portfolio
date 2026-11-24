@@ -68,8 +68,8 @@ export default function HomePage({ goTo }) {
       <div className="status mono">
         <span className="label">now:</span>
         <span>
-          Infra SDE intern at Northern Trust, working with the SRE team on
-          observability and platform reliability
+          Previously Infra SDE intern at Northern Trust (Jun–Oct 2026, SRE
+          team). Currently open to new opportunities.
         </span>
       </div>
 

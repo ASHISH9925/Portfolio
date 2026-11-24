@@ -26,15 +26,15 @@ export default function AboutPage() {
             security-focused applications that solve real-world problems.
           </p>
           <p>
-            I'm currently working as an Infrastructure Software Development
-            Engineering Intern at Northern Trust, where I develop observability
-            dashboards, automate operational workflows, and improve monitoring
-            for enterprise-scale platforms. The experience has strengthened my
-            understanding of distributed systems, reliability engineering, and
-            production software.
+            I recently completed a 20-week internship (Jun–Oct 2026) as an
+            Infrastructure Software Development Engineering Intern at Northern
+            Trust, where I developed observability dashboards, automated
+            operational workflows, and improved monitoring for enterprise-scale
+            platforms. The experience deepened my understanding of distributed
+            systems, reliability engineering, and production software.
           </p>
           <p>
-            Beyond internships, I enjoy building full-stack and cybersecurity
+            Beyond my internship experience, I enjoy building full-stack and cybersecurity
             projects, participating in hackathons, and continuously improving
             my problem-solving skills. I believe the best engineers understand
             not only how to build systems, but also how they fail—and how to
@@ -52,7 +52,7 @@ export default function AboutPage() {
             </div>
             <div className="fact">
               <span className="mono label">currently</span>
-              <span>Infra SDE Intern, Northern Trust</span>
+              <span>Open to new opportunities</span>
             </div>
             <div className="fact">
               <span className="mono label">stack</span>

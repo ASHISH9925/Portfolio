@@ -20,7 +20,7 @@ export default function ContactPage() {
           <PageHeader
             eyebrow="// 05 — contact"
             title="Get in touch"
-            blurb="Open to internships, collaborations, and interesting security or AI problems."
+            blurb="Open to full-time roles, collaborations, and interesting security or AI problems."
           />
           <Reveal as="div" className="contact-content">
             <a className="contact-primary mono" href="https://mail.google.com/mail/?view=cm&to=ashish992005@gmail.com" target="_blank" rel="noreferrer">
